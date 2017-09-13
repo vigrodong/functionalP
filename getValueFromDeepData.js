@@ -13,7 +13,7 @@
  value =  props.user.comments[0].blog.title
  }
  */
-const getValueFromDeepData = (data, ...[array]) => {
+const getValueFromDeepData = (data, ...array) => {
   let value = JSON.parse(JSON.stringify(data));
   if(data == undefined || data == null){
     return undefined;
